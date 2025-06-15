@@ -47,11 +47,7 @@ jobs:
         run: dotnet pack ./src/ShadowKit/ShadowKit.csproj -o ./publish --no-restore /p:VERSIONPREFIX=$VERSIONPREFIX
 
       - name: Push to NuGet
-        run: |
-          rm -f ./publish/*.symbols.nupkg
-          dotnet nuget push ./publish/*.nupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
-#          dotnet nuget push ./publish/*.snupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
-
+        run: dotnet nuget push ./publish/*.nupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4

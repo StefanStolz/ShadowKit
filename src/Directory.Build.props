@@ -17,7 +17,7 @@
     <AnalysisMode>Recommended</AnalysisMode>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' and '$(IncludeSymbols)' == 'True' ">
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     
