@@ -7,7 +7,7 @@
     <RepositoryUrl>https://github.com/StefanStolz/ShadowKit.git</RepositoryUrl>
 
     <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix>beta</VersionSuffix>
+<!--    <VersionSuffix>beta</VersionSuffix>-->
 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile Condition=" '$(IsPackable)' == 'True'">README.md</PackageReadmeFile>
