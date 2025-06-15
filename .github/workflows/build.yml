@@ -22,10 +22,10 @@ jobs:
       run: dotnet restore ./src/ShadowKit.sln 
 
     - name: Build
-      run: dotnet build ./src/ShadowKit.sln --configuration Release
+      run: dotnet build ./src/ShadowKit.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test ./src/ShadowKit.sln --configuration Release
+      run: dotnet test ./src/ShadowKit.sln --configuration Release --no-build
 
     - name: Pack IO
       run: dotnet pack ./src/ShadowKit.IO/ShadowKit.IO.csproj -o ./publish --no-restore
