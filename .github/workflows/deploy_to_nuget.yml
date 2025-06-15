@@ -1,0 +1,50 @@
+name: Deploy to nuget via tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      RAW_TAG: ${{ github.ref_name }}  # z. B. "v1.2.3"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Remove 'v' and export version
+        run: |
+          VERSION=${RAW_TAG#v}
+          echo "VERSIONPREFIX=$VERSION" >> $GITHUB_ENV
+          echo "Bereinigte Version: $VERSION"
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'  # oder deine Version
+
+      - name: Restore dependencies
+        run: dotnet restore ./src/ShadowKit.sln 
+
+      - name: Build
+        run: dotnet build ./src/ShadowKit.sln --configuration Release
+
+      - name: Test
+        run: dotnet test ./src/ShadowKit.sln --configuration Release
+
+      - name: Pack IO
+        run: dotnet pack ./src/ShadowKit.IO/ShadowKit.IO.csproj -o ./publish --no-restore
+
+      - name: Pack Text
+        run: dotnet pack ./src/ShadowKit.Text/ShadowKit.Text.csproj -o ./publish --no-restore
+
+      - name: Pack Threading
+        run: dotnet pack ./src/ShadowKit.Threading/ShadowKit.Threading.csproj -o ./publish --no-restore
+
+      - name: Pack MetaPackage
+        run: dotnet pack ./src/ShadowKit/ShadowKit.csproj -o ./publish --no-restore
+
+      - name: Push to NuGet
+        run: dotnet nuget push ./publish/*.nupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
