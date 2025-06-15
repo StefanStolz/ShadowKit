@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.Threading", "Shad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.Text", "ShadowKit.Text\ShadowKit.Text.csproj", "{88E34D2F-5D38-4615-8179-CF4684F24675}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit", "ShadowKit\ShadowKit.csproj", "{0D3BDEFE-A984-4D18-8F5F-CC38531C6402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{88E34D2F-5D38-4615-8179-CF4684F24675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E34D2F-5D38-4615-8179-CF4684F24675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E34D2F-5D38-4615-8179-CF4684F24675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3BDEFE-A984-4D18-8F5F-CC38531C6402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3BDEFE-A984-4D18-8F5F-CC38531C6402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3BDEFE-A984-4D18-8F5F-CC38531C6402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3BDEFE-A984-4D18-8F5F-CC38531C6402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

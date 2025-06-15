@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <SuppressOutputFiles>true</SuppressOutputFiles>
+        <NoBuild>true</NoBuild>
+
+        <PackageId>ShadowKit</PackageId>
+        <NoWarn>NU5128</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ShadowKit.IO\ShadowKit.IO.csproj" />
+      <ProjectReference Include="..\ShadowKit.Text\ShadowKit.Text.csproj" />
+      <ProjectReference Include="..\ShadowKit.Threading\ShadowKit.Threading.csproj" />
+    </ItemGroup>
+    
+</Project>
