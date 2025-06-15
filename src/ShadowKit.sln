@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Files", "0_Files", "{8AB89829-C8AF-4DA6-A050-98BB439E3DAC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		..\.editorconfig = ..\.editorconfig
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.IO", "ShadowKit.IO\ShadowKit.IO.csproj", "{7DF563D1-552B-4F2A-9915-02364B9F7C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.Threading", "ShadowKit.Threading\ShadowKit.Threading.csproj", "{AC66E23B-9937-4AA6-90B4-8DDF6FA91165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.Text", "ShadowKit.Text\ShadowKit.Text.csproj", "{88E34D2F-5D38-4615-8179-CF4684F24675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DF563D1-552B-4F2A-9915-02364B9F7C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF563D1-552B-4F2A-9915-02364B9F7C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF563D1-552B-4F2A-9915-02364B9F7C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF563D1-552B-4F2A-9915-02364B9F7C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC66E23B-9937-4AA6-90B4-8DDF6FA91165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC66E23B-9937-4AA6-90B4-8DDF6FA91165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC66E23B-9937-4AA6-90B4-8DDF6FA91165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC66E23B-9937-4AA6-90B4-8DDF6FA91165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E34D2F-5D38-4615-8179-CF4684F24675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E34D2F-5D38-4615-8179-CF4684F24675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E34D2F-5D38-4615-8179-CF4684F24675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E34D2F-5D38-4615-8179-CF4684F24675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
