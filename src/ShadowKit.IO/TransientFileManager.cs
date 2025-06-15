@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
 namespace ShadowKit.IO;
@@ -50,6 +51,7 @@ public sealed class TransientFileManager : IDisposable
         return fileName;
     }
 
+    [SuppressMessage("Roslynator", "RCS1075:Avoid empty catch clause that catches System.Exception")]
     private void Cleanup()
     {
         foreach (TransientDirectoryManager tempDirectory in this.tempDirectories)
