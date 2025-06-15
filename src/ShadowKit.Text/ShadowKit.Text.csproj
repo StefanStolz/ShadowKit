@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
     
         <PackageId>ShadowKit.Text</PackageId>
+        <Description>Tools for analyzing and comparing text, including line ending detection and customizable string comparers for multi-line content.</Description>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

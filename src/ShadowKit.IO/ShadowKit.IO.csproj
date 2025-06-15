@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>ShadowKit.IO</PackageId>
+        <Description>Utilities for working with temporary files and directories — ideal for test scenarios involving the file system.</Description>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

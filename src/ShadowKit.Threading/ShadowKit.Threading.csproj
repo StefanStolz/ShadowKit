@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>ShadowKit.Threading</PackageId>
-
+        <Description>Utilities for simulating a SynchronizationContext — useful for testing asynchronous code in controlled threading environments.</Description>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

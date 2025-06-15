@@ -12,6 +12,8 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageId>ShadowKit</PackageId>
         <NoWarn>NU5128</NoWarn>
+        
+        <Description>Modular .NET library providing utilities for file handling, text processing, and synchronization context simulation — optimized for testing scenarios.</Description>
     </PropertyGroup>
 
     <ItemGroup>
