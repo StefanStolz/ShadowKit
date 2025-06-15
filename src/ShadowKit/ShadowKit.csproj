@@ -10,6 +10,10 @@
 
         <PackageId>ShadowKit</PackageId>
         <NoWarn>NU5128</NoWarn>
+        <IncludeSymbols>true</IncludeSymbols>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+        <SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
