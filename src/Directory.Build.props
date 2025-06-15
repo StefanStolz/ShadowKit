@@ -10,14 +10,14 @@
     <VersionSuffix>alpha</VersionSuffix>
 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile Condition=" '$(IsPackable)' == 'True'">README.md</PackageReadmeFile>
 
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <AnalysisMode>Recommended</AnalysisMode>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition=" '$(IsPackable)' == 'True'" >
     <None Include="README.md" Pack="true" PackagePath="\"/> 
   </ItemGroup>
 
@@ -42,7 +42,6 @@
     </PackageReference>
     <PackageReference Include="NUnit3TestAdapter" />
     <PackageReference Include="NSubstitute" />
-    <PackageReference Include="StefanStolz.TestHelpers" />
     <PackageReference Include="Shouldly" />
   </ItemGroup>
 
