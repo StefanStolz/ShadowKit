@@ -7,7 +7,6 @@
 
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <SuppressOutputFiles>true</SuppressOutputFiles>
-        <NoBuild>true</NoBuild>
 
         <PackageId>ShadowKit</PackageId>
         <NoWarn>NU5128</NoWarn>
