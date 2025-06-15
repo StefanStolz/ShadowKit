@@ -50,7 +50,7 @@ jobs:
         run: |
           rm -f ./publish/*.symbols.nupkg
           dotnet nuget push ./publish/*.nupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
-          dotnet nuget push ./publish/*.snupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
+#          dotnet nuget push ./publish/*.snupkg --api-key ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
 
 
       - name: Upload Artifacts
