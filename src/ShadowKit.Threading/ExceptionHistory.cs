@@ -8,7 +8,10 @@ using System.Runtime.ExceptionServices;
 
 namespace ShadowKit.Threading;
 
-public class ExceptionHistory : IReadOnlyList<Exception>
+/// <summary>
+/// A Collection of <see cref="Exception"/>s
+/// </summary>
+public sealed class ExceptionHistory : IReadOnlyList<Exception>
 {
     private readonly List<Exception> exceptions = new();
 
@@ -17,8 +20,12 @@ public class ExceptionHistory : IReadOnlyList<Exception>
         this.exceptions.AddRange(exceptions);
     }
 
+    /// <summary>
+    /// Gets a value indicating whether this Instance is Empty or not
+    /// </summary>
     public bool IsEmpty => this.Count == 0;
 
+    /// <inheritdoc />
     public IEnumerator<Exception> GetEnumerator()
     {
         return this.exceptions.GetEnumerator();
@@ -29,10 +36,18 @@ public class ExceptionHistory : IReadOnlyList<Exception>
         return this.GetEnumerator();
     }
 
+    /// <summary>
+    /// Gets the Number of Exceptions in the History
+    /// </summary>
     public int Count => this.exceptions.Count;
 
+    /// <inheritdoc />
     public Exception this[int index] => this.exceptions[index];
 
+    /// <summary>
+    /// Throws the Exceptions collected in this instance.
+    /// </summary>
+    /// <exception cref="AggregateException"></exception>
     public void Throw()
     {
         if (!this.IsEmpty)

@@ -49,6 +49,7 @@ public sealed class FakeUi : IDisposable
 
     public SynchronizationContext SynchronizationContext => this.synchronisationContext;
 
+    /// <inheritdoc />
     public void Dispose()
     {
         if (!this.disposed)

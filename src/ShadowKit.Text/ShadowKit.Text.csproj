@@ -17,5 +17,6 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <DocumentationFile>/Users/stefan/Development/repos/ShadowKit/artifacts/bin/ShadowKit.Text/release/ShadowKit.Text.xml</DocumentationFile>
     </PropertyGroup>
 </Project>

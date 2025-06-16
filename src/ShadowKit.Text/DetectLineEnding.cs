@@ -12,6 +12,9 @@ namespace ShadowKit.Text
         Mixed
     }
 
+    /// <summary>
+    /// Detects the <see cref="LineEndingKind"/> of a given <see cref="string"/>
+    /// </summary>
     public sealed class DetectLineEnding
     {
         public LineEndingKind DetectFromString(string input)
