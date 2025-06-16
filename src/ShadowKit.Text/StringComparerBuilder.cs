@@ -52,12 +52,12 @@ public sealed class StringComparerBuilder
                 LineEndingKind.Windows => LineEnding.Windows,
                 LineEndingKind.Unix => LineEnding.Unix,
                 LineEndingKind.Mac => LineEnding.Mac,
-                _=> LineEnding.FromEnvironment()
+                _ => LineEnding.FromEnvironment()
             };
 
             var lineSplitter = new LineSplitter(lineEnding);
             var parts = lineSplitter.Execute(input);
-            var transformed = parts.TransformTextItems(t=>t.Trim());
+            var transformed = parts.TransformTextItems(t => t.Trim());
             return transformed.ToString();
         }
     }

@@ -25,7 +25,7 @@ namespace ShadowKit.Text
                 return LineEndingKind.Unknown;
             }
 
-            if (crlfCount > 0)
+            if (crlfCount > 0 && crlfCount == lfCount && crlfCount == crCount)
             {
                 return LineEndingKind.Windows;
             }
