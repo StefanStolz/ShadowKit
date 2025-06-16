@@ -1,3 +1,7 @@
+[![NuGet](https://img.shields.io/nuget/v/ShadowKit.svg)](https://www.nuget.org/packages/ShadowKit)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/StefanStolz/ShadowKit/build.yml?branch=main)](https://github.com/StefanStolz/ShadowKit/actions)
+
 # ShadowKit
 
 **ShadowKit** is a NuGet meta package that bundles a set of tools designed to support different development scenarios, especially in testing and utility contexts. It consists of several specialized sub-packages, each focusing on a specific area of functionality.
