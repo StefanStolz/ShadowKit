@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace ShadowKit.Text;
@@ -66,12 +65,7 @@ public sealed class StringComparerBuilder
     {
         public string Preprocess(string input)
         {
-            using var stringReader = new StringReader(input);
-            var lines = new List<string>();
-            while (stringReader.ReadLine() is { } line)
-            {
-                lines.Add(line);
-            }
+            var lines = input.ToLines();
 
             return string.Join(Environment.NewLine, lines);
         }
