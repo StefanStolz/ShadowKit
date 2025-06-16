@@ -17,6 +17,6 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <DocumentationFile>/Users/stefan/Development/repos/ShadowKit/artifacts/bin/ShadowKit.Threading/release/ShadowKit.Threading.xml</DocumentationFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 </Project>
