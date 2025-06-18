@@ -4,7 +4,7 @@
 
 # ShadowKit
 
-**ShadowKit** is a NuGet meta package that bundles a set of tools designed to support different development scenarios, especially in testing and utility contexts. It consists of several specialized sub-packages, each focusing on a specific area of functionality.
+**ShadowKit** is a set of tools designed to support different development scenarios, especially in testing and utility contexts. It consists of several specialized sub-packages, each focusing on a specific area of functionality.
 
 ## Packages
 
