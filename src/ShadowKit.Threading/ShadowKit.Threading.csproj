@@ -7,6 +7,7 @@
 
         <PackageId>ShadowKit.Threading</PackageId>
         <Description>Utilities for simulating a SynchronizationContext — useful for testing asynchronous code in controlled threading environments.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

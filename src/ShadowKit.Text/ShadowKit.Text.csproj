@@ -7,6 +7,7 @@
     
         <PackageId>ShadowKit.Text</PackageId>
         <Description>Tools for analyzing and comparing text, including line ending detection and customizable string comparers for multi-line content.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
