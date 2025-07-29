@@ -6,7 +6,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/StefanStolz/ShadowKit.git</RepositoryUrl>
 
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <VersionSuffix>beta</VersionSuffix>
 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

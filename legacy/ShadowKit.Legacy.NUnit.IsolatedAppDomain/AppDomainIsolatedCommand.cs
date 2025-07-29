@@ -37,7 +37,6 @@ namespace ShadowKit.Legacy.NUnit.IsolatedAppDomain
                     testCaseResult.SetResult(ResultState.Success, myResult.Message);
                 } else {
                     testCaseResult.SetResult(ResultState.Failure, myResult.Message);
-                    ;
                 }
 
                 return testCaseResult;

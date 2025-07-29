@@ -16,4 +16,13 @@
     <ProjectReference Include="..\ShadowKit.Legacy.NUnit.IsolatedAppDomain\ShadowKit.Legacy.NUnit.IsolatedAppDomain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LibOne">
+      <HintPath>..\..\artifacts\bin\LibOne\debug\LibOne.dll</HintPath>
+    </Reference>
+    <Reference Include="LibTwo">
+      <HintPath>..\..\artifacts\bin\LibTwo\debug\LibTwo.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

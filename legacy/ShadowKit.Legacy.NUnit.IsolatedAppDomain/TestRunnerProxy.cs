@@ -1,10 +1,36 @@
 ﻿using System;
+using System.IO;
 using System.Reflection;
 
 namespace ShadowKit.Legacy.NUnit.IsolatedAppDomain
 {
     public class TestRunnerProxy : MarshalByRefObject
     {
+        public TestRunnerProxy()
+        {
+            AppDomain.CurrentDomain.AssemblyResolve += OnAppDomainAssemblyResolve;
+        }
+
+        private static Assembly OnAppDomainAssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            var assemblyName = new AssemblyName(args.Name);
+
+            try
+            {
+                string assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, assemblyName.Name + ".dll");
+                if (File.Exists(assemblyPath))
+                {
+                    return Assembly.LoadFrom(assemblyPath);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine($"Exception during assembly resolving of {assemblyName.Name}: {e.Message}");
+            }
+            
+            return null;
+        }
+
         public MyResult RunTest(string assemblyPath, string typeName, string methodName)
         {
             var startTime = DateTime.Now;
