@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.TestContainers.GreenMail", "ShadowKit.TestContainers.GreenMail\ShadowKit.TestContainers.GreenMail.csproj", "{D7BF33BE-F9F2-4B62-8D63-D37438A10FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowKit.TestContainers.GreenMail.Tests", "ShadowKit.TestContainers.GreenMail.Tests\ShadowKit.TestContainers.GreenMail.Tests.csproj", "{AE1263CF-D0BF-46EB-8CB4-C29799CD7116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7BF33BE-F9F2-4B62-8D63-D37438A10FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BF33BE-F9F2-4B62-8D63-D37438A10FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BF33BE-F9F2-4B62-8D63-D37438A10FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BF33BE-F9F2-4B62-8D63-D37438A10FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1263CF-D0BF-46EB-8CB4-C29799CD7116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1263CF-D0BF-46EB-8CB4-C29799CD7116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1263CF-D0BF-46EB-8CB4-C29799CD7116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1263CF-D0BF-46EB-8CB4-C29799CD7116}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
