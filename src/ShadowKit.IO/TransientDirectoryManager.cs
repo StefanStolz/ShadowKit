@@ -47,6 +47,7 @@ public sealed class TransientDirectoryManager : IDisposable
 
     public string CreateTransientFile(string extension, bool createFile = false)
     {
+        extension = extension.TrimStart('.');
         string fileName = this.randomNameGenerator.GetRandomName(16) + "." + extension;
 
         var path = this.CreateTransientPath(fileName);
